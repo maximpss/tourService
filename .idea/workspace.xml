@@ -4,7 +4,52 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="202494df-9023-4a83-b3fe-7512ab33e0b9" name="Changes" comment="" />
+    <list default="true" id="202494df-9023-4a83-b3fe-7512ab33e0b9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/psu/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/psu/dao/ConnectionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/psu/dao/JdbcHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/psu/exception/TourServiceValidationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/psu/model/Booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/psu/model/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/psu/model/Excursion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/psu/model/Flight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/psu/model/HotelStay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/psu/model/RoomType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/psu/model/TourService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/psu/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/psu/dao/ConnectionManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/psu/dao/JdbcHelper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/psu/exception/TourServiceValidationException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/psu/model/Booking$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/psu/model/Booking$BookingStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/psu/model/Booking.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/psu/model/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/psu/model/Difficulty.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/psu/model/Excursion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/psu/model/Flight.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/psu/model/HotelStay.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/psu/model/RoomType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/psu/model/TourService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exception/TourServiceValidationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Booking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/BookingStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Difficulty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/psu/model/Difficulty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Excursion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Flight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/HotelStay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/RoomType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/TourService.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,16 +74,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/IdeaProjects/HomeWork/HomeWork&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/user/IdeaProjects/HomeWork/labs/src/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/user/IdeaProjects/HomeWork/labs/src",
+    "onboarding.tips.debug.path": "C:/Users/user/IdeaProjects/HomeWork/labs/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\HomeWork\labs\src\main\java\by\psu\" />
+      <recent name="C:\Users\user\IdeaProjects\HomeWork\labs\src\main\java\by\psu/+\" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="labs" />
@@ -64,5 +120,22 @@
       <updated>1774077305183</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
