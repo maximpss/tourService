@@ -1,17 +1,19 @@
 package by.psu;
 
-import by.psu.dao.ConnectionManager;
-import by.psu.dao.JdbcHelper;
-import by.psu.model.Excursion;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.util.List;
-
+@SpringBootApplication
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("=== Заполнение и чтение таблицы Excursion ===\n");
+
+        SpringApplication.run(Main.class, args);
+
+
+
+
+       /* System.out.println("=== Заполнение и чтение таблицы Excursion ===\n");
 
         // ВАРИАНТ 1: Через ConnectionManager с транзакцией (как в первом коде)
         try (var connectionManager = new ConnectionManager()) {
@@ -69,5 +71,7 @@ public class Main {
             e.printStackTrace();
             throw new RuntimeException(e);
         }
+
+        */
     }
 }
