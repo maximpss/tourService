@@ -10,7 +10,6 @@ import lombok.RequiredArgsConstructor;
 import org.springdoc.core.annotations.ParameterObject;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.relational.core.sql.In;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.*;
 
@@ -39,5 +38,20 @@ public class ExcursionController {
     @GetMapping(produces = APPLICATION_JSON_VALUE)
     public Page<ExcursionResponse> getPage(@PageableDefault @ParameterObject Pageable pageable){
         return tourServiceService.getExcursionPage(pageable);
+    }
+
+
+    @Operation(summary = "Обновляет данные экскурсии по ID")
+    @PutMapping(path = "/{id}", produces = APPLICATION_JSON_VALUE, consumes = APPLICATION_JSON_VALUE)
+    public ExcursionResponse update(
+            @PathVariable Integer id,
+            @RequestBody @Valid ExcursionCreateRequest request) {
+        return tourServiceService.updateExcursion(id, request);
+    }
+
+    @Operation(summary = "Удаляет экскурсию по ID")
+    @DeleteMapping(path = "/{id}", produces = APPLICATION_JSON_VALUE)
+    public void delete(@PathVariable Integer id) {
+        tourServiceService.deleteExcursion(id);
     }
 }
