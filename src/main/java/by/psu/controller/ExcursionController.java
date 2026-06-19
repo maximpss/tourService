@@ -1,6 +1,7 @@
 package by.psu.controller;
 
 import by.psu.dto.request.ExcursionCreateRequest;
+import by.psu.dto.request.ExcursionUpdateRequest;
 import by.psu.dto.response.ExcursionResponse;
 import by.psu.service.TourServiceService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -24,34 +25,35 @@ public class ExcursionController {
 
     @Operation(summary = "Создаёт экскурсию")
     @PostMapping(produces = APPLICATION_JSON_VALUE, consumes = APPLICATION_JSON_VALUE)
-    public ExcursionResponse create(@RequestBody @Valid ExcursionCreateRequest request){
+    public ExcursionResponse create(@RequestBody @Valid ExcursionCreateRequest request) {
         return tourServiceService.createExcursion(request);
     }
 
     @Operation(summary = "Предоставляет экскурсию по ID")
     @GetMapping(path = "/{id}", produces = APPLICATION_JSON_VALUE)
-    public ExcursionResponse getById(@PathVariable Integer id){
+    public ExcursionResponse getById(@PathVariable Integer id) {
         return tourServiceService.getExcursionById(id);
+    }
+
+    // Обновление экскурсии
+    @Operation(summary = "Обновляет экскурсию по ID")
+    @PutMapping(path = "/{id}", produces = APPLICATION_JSON_VALUE, consumes = APPLICATION_JSON_VALUE)
+    public ExcursionResponse update(
+            @PathVariable Integer id,
+            @RequestBody @Valid ExcursionUpdateRequest request) {
+        return tourServiceService.updateExcursion(id, request);
+    }
+
+    // Удаление экскурсии
+    @Operation(summary = "Удаляет экскурсию по ID")
+    @DeleteMapping(path = "/{id}")
+    public void delete(@PathVariable Integer id) {
+        tourServiceService.deleteExcursion(id);
     }
 
     @Operation(summary = "Предоставляет список экскурсий")
     @GetMapping(produces = APPLICATION_JSON_VALUE)
-    public Page<ExcursionResponse> getPage(@PageableDefault @ParameterObject Pageable pageable){
+    public Page<ExcursionResponse> getPage(@PageableDefault @ParameterObject Pageable pageable) {
         return tourServiceService.getExcursionPage(pageable);
-    }
-
-
-    @Operation(summary = "Обновляет данные экскурсии по ID")
-    @PutMapping(path = "/{id}", produces = APPLICATION_JSON_VALUE, consumes = APPLICATION_JSON_VALUE)
-    public ExcursionResponse update(
-            @PathVariable Integer id,
-            @RequestBody @Valid ExcursionCreateRequest request) {
-        return tourServiceService.updateExcursion(id, request);
-    }
-
-    @Operation(summary = "Удаляет экскурсию по ID")
-    @DeleteMapping(path = "/{id}", produces = APPLICATION_JSON_VALUE)
-    public void delete(@PathVariable Integer id) {
-        tourServiceService.deleteExcursion(id);
     }
 }

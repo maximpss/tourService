@@ -9,9 +9,13 @@ spring:
     virtual:
       enabled: true
   datasource:
-    url: jdbc:postgresql://127.0.0.1:5432/tour-service
+    url: jdbc:postgresql://postgres:5432/tour-service
     username: admin
     password: admin
     driver-class-name: org.postgresql.Driver
   flyway:
     enabled: true
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui

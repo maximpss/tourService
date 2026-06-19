@@ -1,10 +1,5 @@
 package by.psu.model;
 
-public enum RoomType
-{
-    SINGLE,
-    DOUBLE,
-    TWIN,
-    SUITE,
-    FAMILY
+public enum RoomType {
+    SINGLE, DOUBLE, FAMILY
 }
